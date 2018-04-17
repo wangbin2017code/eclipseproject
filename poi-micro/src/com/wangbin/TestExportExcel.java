@@ -26,7 +26,7 @@ public class TestExportExcel {
 		dataset.add(new Student(30000003, "王五", 22, true, new Date()));
 		
 		try {
-			OutputStream outputStream = new FileOutputStream("E://learningProject//eclipseWorkspace//poi-micro//WebContent//excel//student.xls");
+			OutputStream outputStream = new FileOutputStream("F://github//eclipseWorkspace//eclipseproject//poi-micro//WebContent//excel//student.xls");
 			ExportExcel.exportExcel("学生个人信息登记", headers, dataset, outputStream, "yy/MM/dd");
 			JOptionPane.showMessageDialog(null, "导出成功!");
 			System.out.println("excel导出成功!");
